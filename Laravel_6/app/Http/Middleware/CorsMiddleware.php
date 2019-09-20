@@ -32,7 +32,8 @@ class CorsMiddleware
        // return $response;
 
         $allowedOrigins = ['http://localhost:8000', 'http://localhost:8080', 'http://localhost:8001'];
-        $origin = $_SERVER['HTTP_ORIGIN'];
+        // $origin = $_SERVER['HTTP_ORIGIN'];
+        $origin = 'http://localhost:8000';
 
         if (in_array($origin, $allowedOrigins)) {
             return $next($request)
