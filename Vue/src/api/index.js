@@ -1,7 +1,7 @@
 import axios from 'axios'
 
 
-const API_URL = 'http://bitacoraplayera.com/api'
+const API_URL = 'http://api.bitacoraplayera.com/api'
 export default class ApiService{
 constructor(){
 }
